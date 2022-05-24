@@ -1,0 +1,9 @@
+.root {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #000;
+    z-index: 25;
+    color: #ffffff;;
+    position: relative;
+    font-family: Inter, sans-serif;
+}

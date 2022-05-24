@@ -1,0 +1,8 @@
+.images__text {
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 24px 15px 25px 21px;
+}

@@ -1,0 +1,14 @@
+.images {
+    max-width:  880px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 901px){
+    .images{
+        max-width: 580px;
+    }
+}
+@media screen and (max-width: 630px){
+    .images{
+        max-width: 280px;
+    }
+}

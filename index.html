@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around the US</title>
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="root">
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <img class="header__img" src="images/around.png" alt="logo-around">
+            </div>
+        </header>
+
+        <section class="profile">
+            <div class="profile__container">
+                
+                <div class="profile__info">
+                    <div class="profile__img"></div>
+                    <div class="profile__edit">
+                        <div class="profile__align">
+                            <h1 class="profile__name">Steven Villalba</h1>
+                            <div class="profile__container-edit filter">
+                                <img class="profile__btn-edit" src="images/edit.png" alt="boton de editar">
+                            </div>
+                        </div>
+                        <p class="profile__profession">Explorador</p>
+                    </div>
+                </div>
+
+                <div class="profile__add filter">
+                    <img class="profile__btn-add" src="images/add.png" alt="boton de agregar">
+                </div>
+
+            </div>
+        </section>
+
+        <div class="popup">
+            <div class="popup__box popup__closed popup__opened">
+                <img class="popup__icon-close filter" src="images/Close-Icon.png" alt="icono de cerrar">
+                <form class="popup__container">
+                    <h3 class="popup__title">Editar Perfil</h3>
+                    <input class="popup__input" type="text" placeholder="Nombre" value="Steven Villalba">
+                    <input class="popup__input-about" type="text" placeholder="Acerca de mi" value="Explorador">
+                    <input class="popup__submit filter" type="submit" value="Guardar">
+                </form>
+            </div>
+        </div>
+
+        <main class="images">
+            <div class="images__box">
+                <section class="images__target">
+                    <div class="images__container">
+                        <img class="img images__img" src="images/valle-de-yosemite.jpg" alt="valle de yosemite">
+                    </div>
+                    <div class="images__text">
+                        <h2 class="images__title">Valle de Yosemite</h2>
+                        <img class="images__heart filter" src="images/heart.png" alt="logo de corazon">
+                    </div>
+                </section>
+    
+                <section class="images__target">
+                    <div class="images__container">
+                        <img class="img images__img" src="images/san-francisco.jpg" alt="valle de yosemite">
+                    </div>
+                    <div class="images__text">
+                        <h2 class="images__title">San Francisco</h2>
+                        <img class="images__heart filter" src="images/heart.png" alt="logo de corazon">
+                    </div>
+                </section>
+    
+                <section class="images__target">
+                    <div class="images__container">
+                        <img class="img images__img" src="images/alaska.jpg" alt="valle de yosemite">
+                    </div>
+                    <div class="images__text">
+                        <h2 class="images__title">Alaska</h2>
+                        <img class="images__heart filter" src="images/heart.png" alt="logo de corazon">
+                    </div>
+                </section>
+    
+                <section class="images__target">
+                    <div class="images__container">
+                        <img class="img images__img" src="images/litle-havana.jpg" alt="valle de yosemite">
+                    </div>
+                    <div class="images__text">
+                        <h2 class="images__title">Little Havana</h2>
+                        <img class="images__heart filter" src="images/heart.png" alt="logo de corazon">
+                    </div>
+                </section>
+    
+                <section class="images__target">
+                    <div class="images__container">
+                        <img class="img images__img" src="images/monte-rushmore.jpg" alt="valle de yosemite">
+                    </div>
+                    <div class="images__text">
+                        <h2 class="images__title">Monte Rushmore</h2>
+                        <img class="images__heart filter" src="images/heart.png" alt="logo de corazon">
+                    </div>
+                </section>
+    
+                <section class="images__target">
+                    <div class="images__container">
+                        <img class="img images__img" src="images/manhattan.jpg" alt="valle de yosemite">
+                    </div>
+                    <div class="images__text">
+                        <h2 class="images__title">Manhattan</h2>
+                        <img class="images__heart filter" src="images/heart.png" alt="logo de corazon">
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">© 2022 Pedernales Manabi</p>
+        </footer>
+    </div>
+
+    <script src="script/scripts.js"></script>
+</body>
+</html>

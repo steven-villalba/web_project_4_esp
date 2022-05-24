@@ -1,0 +1,8 @@
+.profile__img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background:  url(/images/stev.jpg);
+    background-size: cover;
+    margin-right: 25px;
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Inter;
+    src: local("/fuentes/InterDesktop/Inter-ExtraBold.otf") format("otf"),
+
+    local("/fuentes/InterDesktop/Inter-Bold.otf") format("otf");
+}
+@font-face {
+    font-family: Inter;
+    src: local("/fuentes/InterDesktop/Inter-Regular.woff2") format("woff2"),
+
+    local("/fuentes/InterDesktop/Inter-Regular.woff") format("woff");
+}

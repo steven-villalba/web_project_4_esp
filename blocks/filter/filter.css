@@ -1,0 +1,8 @@
+.filter {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+}
+.filter:hover {
+    -webkit-filter: opacity(1);
+    filter:  opacity(.5);
+}
