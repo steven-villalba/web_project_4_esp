@@ -1,5 +1,5 @@
 .footer__text {
-    text-align: center;
-    font-size: 20px;
-    padding:  8px 0;
+    font-size: 18px;
+    line-height: 22px;
+    color: #545454;
 }
