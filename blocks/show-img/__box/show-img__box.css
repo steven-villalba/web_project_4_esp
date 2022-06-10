@@ -1,0 +1,23 @@
+.show-img__box {
+    max-width: 550px;
+    max-height: 75vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 20;
+}
+@media screen and (max-width: 650px) {
+    .show-img__box {
+        max-width: 450px;
+        max-height: 75vh;
+    }
+}
+@media screen and (max-width: 530px) {
+    .show-img__box {
+        max-width: 350px;
+        max-height: 75vh;
+    }
+}

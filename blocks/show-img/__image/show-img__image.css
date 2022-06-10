@@ -1,0 +1,14 @@
+.show-img__image {
+    max-width: 75vw;
+    height: 75vh;
+}
+@media screen and (max-width: 700px){
+    .show-img__image {
+        max-height: 65vh;
+    }
+}
+@media screen and (max-width: 532px){
+    .show-img__image {
+        max-height: 40vh;
+    }
+}

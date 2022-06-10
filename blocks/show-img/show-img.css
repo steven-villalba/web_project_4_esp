@@ -1,14 +1,14 @@
-.popup {
+.show-img {
     height: 100%;
     width: 100%;
     overflow: auto;
     position: fixed;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0, .6);
+    background-color: rgba(0,0,0, .8);
     z-index: 12;
     display: none;
-    animation: fade_in_show 0.5s
+    animation: fade_in_show .4s;
 }
 @keyframes fade_in_show {
     0% {

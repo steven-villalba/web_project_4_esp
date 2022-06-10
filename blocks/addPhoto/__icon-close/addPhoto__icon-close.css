@@ -1,0 +1,6 @@
+.addPhoto__icon-close {
+    position: absolute;
+    top: -10;
+    right: 0;
+    cursor: pointer;
+}

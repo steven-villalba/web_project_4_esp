@@ -1,0 +1,7 @@
+.addPhoto__clic {
+    height: 50px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
