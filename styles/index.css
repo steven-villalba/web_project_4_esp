@@ -4,7 +4,7 @@
 @import url(../blocks/container/container.css);
 @import url(../blocks/img/img.css);
 @import url(../blocks/filter/filter.css);
-@import url(../blocks/span_error/span_error.css);
+@import url(../blocks/span-fail/span-fail.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/__img/header__img.css);

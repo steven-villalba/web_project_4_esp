@@ -43,7 +43,7 @@ const toggle = (inputList, buttonElement) => {
 };
 
 const setEventListeners = form => {
-    const inputList = Array.from(form.querySelectorAll(".form__input"));
+    const inputList = Array.from(form.querySelectorAll(".form-input"));
     const buttonElement = form.querySelector(".popup__submit");
 
     toggle(inputList, buttonElement);
@@ -113,7 +113,7 @@ const toggleButton = (inputList, buttonElement) => {
 };
 
 const $setEventListeners = form => {
-    const inputList = Array.from(form.querySelectorAll(".form__input"));
+    const inputList = Array.from(form.querySelectorAll(".form-input"));
     const buttonElement = form.querySelector(".addPhoto__clic");
 
     toggleButton(inputList, buttonElement);
