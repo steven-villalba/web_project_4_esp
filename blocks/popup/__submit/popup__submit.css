@@ -1,6 +1,7 @@
 .popup__submit {
     height: 50px;
     border: none;
+    margin-top: 20px;
     color: #fff;
     background-color: #000;
     cursor: pointer;

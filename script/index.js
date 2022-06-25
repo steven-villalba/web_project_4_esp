@@ -23,9 +23,28 @@ function saveOn(evt){
     changeName.textContent = inputName.value;
     changeAbout.textContent = inputAbout.value;
 }
+function pressEsc(evt){
+    if (evt.key === "Escape"){
+        active.style.display = "none";
+    }
+}
+
+active.addEventListener("click", function (evt){
+    if (evt.target === inputAbout ||  evt.target === inputName) {
+        active.style.display = "block";
+    }
+    else {
+        active.style.display = "none";
+    }
+});
+
+document.addEventListener("keydown",  pressEsc);
+
 clickk.addEventListener("click", addForm );
 inactive.addEventListener("click", close);
 save.addEventListener("click", saveOn);
+
+
 
 //Quitar tarjeta
 
@@ -113,6 +132,16 @@ closePhoto.addEventListener("click", function(){
     containPhoto.style.display = "none";
 });
 
+containPhoto.addEventListener("click", function (){
+    containPhoto.style.display = "none";
+});
+
+document.addEventListener("keydown", function (evento){
+    if (evento.key === "Escape"){
+        containPhoto.style.display = "none";
+    }
+});
+
 //Ventana modal  Add photo
 
 const openWindow =document.querySelector(".addPhoto");
@@ -130,6 +159,21 @@ function  appear(){
 function disappear(){
     openWindow.style.display = "none";
 }
+
+document.addEventListener("keydown", function (event){
+    if (event.key === "Escape") {
+        openWindow.style.display = "none";
+    }
+});
+
+openWindow.addEventListener("click", function (evt){
+    if (evt.target === inputNamePhoto || evt.target === inputPhoto){
+        openWindow.style.display = "block";
+    }
+    else {
+        openWindow.style.display = "none";
+    }
+});
 
 addPhoto.addEventListener("click", appear);
 closeForm.addEventListener("click", disappear);
