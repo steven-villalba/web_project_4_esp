@@ -2,6 +2,8 @@
 const active =document.querySelector(".popup");
 const clickk =document.querySelector(".profile__btn-edit");
 const inactive =document.querySelector(".popup__icon-close");
+const containerForm = document.querySelector(".popup__container");
+const $title = active.querySelector(".popup__title");
 
 const save = document.querySelector(".popup__submit");
 const inputName =document.querySelector(".popup__input");
@@ -25,16 +27,16 @@ function saveOn(evt){
 }
 function pressEsc(evt){
     if (evt.key === "Escape"){
-        active.style.display = "none";
+        close();
     }
 }
 
 active.addEventListener("click", function (evt){
-    if (evt.target === inputAbout ||  evt.target === inputName) {
-        active.style.display = "block";
+    if (evt.target === containerForm || evt.target === inputAbout ||  evt.target === inputName || evt.target === $title) {
+        addForm();
     }
     else {
-        active.style.display = "none";
+        close();
     }
 });
 
@@ -147,6 +149,8 @@ document.addEventListener("keydown", function (evento){
 const openWindow =document.querySelector(".addPhoto");
 const addPhoto = document.querySelector(".profile__btn-add");
 const closeForm = document.querySelector(".addPhoto__icon-close");
+const clicOut = openWindow.querySelector(".addPhoto__container");
+const titleOut = openWindow.querySelector(".addPhoto__title");
 
 const crear = document.querySelector(".addPhoto__clic");
 const inputNamePhoto =document.querySelector(".addPhoto__name");
@@ -162,16 +166,16 @@ function disappear(){
 
 document.addEventListener("keydown", function (event){
     if (event.key === "Escape") {
-        openWindow.style.display = "none";
+        disappear();
     }
 });
 
 openWindow.addEventListener("click", function (evt){
-    if (evt.target === inputNamePhoto || evt.target === inputPhoto){
-        openWindow.style.display = "block";
+    if (evt.target === clicOut || evt.target === titleOut || evt.target === inputNamePhoto || evt.target === inputPhoto){
+        appear();
     }
     else {
-        openWindow.style.display = "none";
+        disappear();
     }
 });
 

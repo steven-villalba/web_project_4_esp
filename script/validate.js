@@ -68,7 +68,14 @@ const enableValidation = () => {
     });
 };
 
-enableValidation();
+enableValidation({
+    formSelector: ".popup__container",
+    inputSelector: ".form-input",
+    submitButtonSelector: ".popup__submit",
+    inactiveButtonClass: "popup__button-inactive",
+    inputErrorClass: "popup__active-error",
+    errorClass: "popup__valid"
+});
 
 ///////////////////////////////////////////////////////////////
 
@@ -138,4 +145,11 @@ const $enableValidation = () => {
     });
 };
 
-$enableValidation();
+$enableValidation({
+    formSelector: ".addPhoto__container",
+    inputSelector: ".form-input",
+    submitButtonSelector: ".addPhoto__clic",
+    inactiveButtonClass: "addPhoto__button-inactive",
+    inputErrorClass: "popup__active-error",
+    errorClass: "popup__valid"
+});
