@@ -11,39 +11,44 @@ const inputAbout = document.querySelector(".popup__input-about");
 const changeName = document.querySelector(".profile__name");
 const changeAbout = document.querySelector(".profile__profession");
 
-function  addForm(){
-    active.style.display = "block";
+function  addForm(open){
+    open.style.display = "block";
 }
 
-function close(){
-    active.style.display = "none";
+function close(closed){
+    closed.style.display = "none";
 }
 
 function saveOn(evt){
     evt.preventDefault();
-    active.style.display = "none";
+    // active.style.display = "none";
+    close(active);
     changeName.textContent = inputName.value;
     changeAbout.textContent = inputAbout.value;
 }
 function pressEsc(evt){
     if (evt.key === "Escape"){
-        close();
+        close(active);
     }
 }
 
 active.addEventListener("click", function (evt){
     if (evt.target === containerForm || evt.target === inputAbout ||  evt.target === inputName || evt.target === $title) {
-        addForm();
+        addForm(active);
     }
     else {
-        close();
+        close(active);
     }
 });
 
 document.addEventListener("keydown",  pressEsc);
 
-clickk.addEventListener("click", addForm );
-inactive.addEventListener("click", close);
+clickk.addEventListener("click", () => {
+    addForm(active);
+} );
+inactive.addEventListener("click", () =>{
+    close(active);
+});
 save.addEventListener("click", saveOn);
 
 
@@ -131,16 +136,17 @@ const containPhoto = document.querySelector(".show-img");
 const closePhoto = document.querySelector(".show-img__icon-close");
 
 closePhoto.addEventListener("click", function(){
-    containPhoto.style.display = "none";
+    close(containPhoto);
 });
 
 containPhoto.addEventListener("click", function (){
-    containPhoto.style.display = "none";
+    close(containPhoto);
 });
 
 document.addEventListener("keydown", function (evento){
     if (evento.key === "Escape"){
-        containPhoto.style.display = "none";
+
+        close(containPhoto);
     }
 });
 
@@ -156,31 +162,27 @@ const crear = document.querySelector(".addPhoto__clic");
 const inputNamePhoto =document.querySelector(".addPhoto__name");
 const inputPhoto = document.querySelector(".addPhoto__photo");
 
-function  appear(){
-    openWindow.style.display = "block";
-}
-
-function disappear(){
-    openWindow.style.display = "none";
-}
-
 document.addEventListener("keydown", function (event){
     if (event.key === "Escape") {
-        disappear();
+        close(openWindow);
     }
 });
 
 openWindow.addEventListener("click", function (evt){
     if (evt.target === clicOut || evt.target === titleOut || evt.target === inputNamePhoto || evt.target === inputPhoto){
-        appear();
+        addForm(openWindow);
     }
     else {
-        disappear();
+        close(openWindow);
     }
 });
 
-addPhoto.addEventListener("click", appear);
-closeForm.addEventListener("click", disappear);
+addPhoto.addEventListener("click", () =>{
+    addForm(openWindow);
+});
+closeForm.addEventListener("click", () => {
+    close(openWindow);
+});
 
 //agregar tarjeta
 

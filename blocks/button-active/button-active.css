@@ -1,0 +1,5 @@
+.button-active {
+    background-color: #fff;
+    border: 1px solid rgb(193, 191, 191);
+    color: #808080;
+}
